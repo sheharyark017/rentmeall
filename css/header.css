@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed;
+  box-shadow: 0 0 5px #ccc;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.inner-header {
+  padding: 15px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+}
+
+header .logo p {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.phone-nav {
+  display: none;
+}
+
+header ul {
+  list-style: none;
+}
+
+header nav ul {
+  display: flex;
+  column-gap: 30px;
+}
+
+.add-item {
+  background: #205bc7;
+  color: #fff;
+  display: inline;
+  border-radius: 99px;
+  padding: 5px 13px;
+}
+
+.add-item:hover {
+  color: #fff;
+}
+
+.account-dropdown {
+  position: relative;
+}
+
+.dropdown-image {
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 5px 0 #a9a9a9;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown-image img {
+  width: 100%;
+}
+
+.dropdown-links {
+  max-height: 0px;
+  position: absolute;
+  min-width: 190px;
+  top: 60px;
+  right: 0;
+  box-shadow: 0 0 8px 0 #d5d5d5;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.dropdown-links.show {
+  max-height: 300px;
+}
+
+.dropdown-links li {
+  font-size: 17px;
+}
+
+.dropdown-links a {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #efefef;
+  font-size: 17px;
+}
+
+.dropdown-links .signout-form {
+  padding: 3px;
+}
+
+.dropdown-links button {
+  background-color: rgb(235, 62, 62);
+  border: none;
+  outline: none;
+  display: block;
+  padding: 9px 15px;
+  border-bottom: 1px solid #efefef;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0 0 10px 10px;
+}
+
+.dropdown-links a:hover {
+  background: #f4f4f4;
+}
+
+.dropdown-links button:hover {
+  background-color: rgb(215, 0, 0);
+}
+
+.main {
+  padding: 0px 80px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    padding: 0px 20px;
+  }
+
+  .inner-header {
+    padding: 15px 20px;
+  }
+
+  header .logo p {
+    font-size: 30px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .phone-nav {
+    display: block;
+  }
+}
