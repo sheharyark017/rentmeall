@@ -1,7 +1,6 @@
 /* top banner */
 
 .top-banner {
-  margin: 75px 0 50px 0;
   height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;

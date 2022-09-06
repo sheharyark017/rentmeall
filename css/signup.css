@@ -1,0 +1,118 @@
+.form-page {
+  width: 650px;
+  margin: 150px auto 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 0 #d0d0d0;
+  padding: 30px 50px;
+}
+
+.signin-form-page {
+  width: 600px;
+  padding: 30px 70px;
+}
+
+.form-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-top p {
+  font-size: 27px;
+  font-weight: 700;
+  color: rgb(36, 36, 36);
+}
+
+.names,
+.auth,
+.passwords {
+  display: flex;
+  gap: 30px;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  border-bottom: 2px solid rgb(191, 191, 191);
+  margin-bottom: 30px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.input i {
+  color: #3e3e3e;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+}
+
+.input:focus-within {
+  border-bottom: 2px solid rgb(48, 83, 117);
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.form-button button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #3168ce;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-button button:hover {
+  box-shadow: 3px 3px 5px 0 rgb(178, 178, 178);
+}
+
+.account-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.account-link a {
+  font-size: 15px;
+  color: #3168ce;
+}
+
+.account-link a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .form-page {
+    width: 100%;
+    margin: 100px auto 80px;
+    box-shadow: none;
+    padding: 20px 20px;
+  }
+
+  .form-top {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .form-top p {
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(36, 36, 36);
+  }
+
+  .names,
+  .auth,
+  .passwords {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
