@@ -1,3 +1,4 @@
+// home slider
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -25,3 +26,25 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+// end home slider
+
+// product slider
+
+var swiper = new Swiper(".mySwiper-3", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+// end product slider
