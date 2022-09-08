@@ -331,8 +331,12 @@
 
 .product-right-details .date-inputs {
   display: flex;
-  gap: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.product-right-details .date-inputs .book-date {
+  width: 48%;
 }
 
 .product-right-details .date-inputs label {
