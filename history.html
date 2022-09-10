@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js" data-auto-replace-svg="nest"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <div class="inner-header">
+            <div class="logo">
+                <p>RentMeAll</p>
+            </div>
+            <div class="navlinks">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Item Listings</a></li>
+                        <li><a href="" class="add-item">List an Item +</a></li>
+                    </ul>
+                </nav>
+                <div class="account-dropdown">
+                    <div class="dropdown-image">
+                        <img src="images/avatar.webp" alt="">
+                    </div>
+                    <div class="dropdown-links ">
+                        <ul>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">My Items</a></li>
+                            <li><a href="">My Rentals</a></li>
+                            <div class="phone-nav">
+                                <ul>
+                                    <li><a href="">Item Listings</a></li>
+                                    <li><a href="">List an Item</a></li>
+                                </ul>
+                            </div>
+                            <form class="signout-form" action="">
+                                <li><button class="signout-btn">Signout</button></li>
+                            </form>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- end header -->
+
+    <!-- main -->
+
+    <div class="main">
+
+        <div class="history">
+            <div class="history-top">
+                <p>My History</p>
+            </div>
+
+            <div class="history-tabs">
+                <div class="tab">
+                    <div class="tab-buttons">
+                        <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')">London</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                    </div>
+                </div>
+
+                <div id="London" class="tabcontent">
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th style="min-width: 320px;">Item Name</th>
+                                <th style="min-width: 200px;">Owner Name</th>
+                                <th style="min-width: 150px;">From Date</th>
+                                <th style="min-width: 150px;">To Date</th>
+                                <th style="min-width: 200px;">Phone Number</th>
+                                <th style="min-width: 350px;">Your Review</th>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="1 - 5">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="⭐">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="⭐" min="1" max="5">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th style="min-width: 320px;">Item Name</th>
+                                <th style="min-width: 200px;">Customer Name</th>
+                                <th style="min-width: 150px;">From Date</th>
+                                <th style="min-width: 150px;">To Date</th>
+                                <th style="min-width: 200px;">Phone Number</th>
+                                <th style="min-width: 350px;">Rating (1 to 5)</th>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="⭐">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="⭐">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DJI Inspire 2 / CAA Certified Operator</td>
+                                <td>Maria Anders</td>
+                                <td>10/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>090078601</td>
+                                <td>
+                                    <form action="">
+                                        <div class="rating">
+                                            <input type="number" placeholder="⭐" min="1" max="5">
+                                        </div>
+                                        <div class="review">
+                                            <input type="text" placeholder="Write your review">
+                                        </div>
+                                        <div class="button">
+                                            <button>Save</button>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end main -->
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-top-line"></div>
+        <div class="inner-footer">
+
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <p>RentMeAll</p>
+                </div>
+                <div class="footer-about-text">
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Hic
+                        fuga tempora
+                        ipsa
+                        possimus
+                        reiciendis provident, natus, magni temporibus, necessitatibus asperiores officia quis recusandae
+                        consequatur.</p>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <div class="footer-top">
+                    <p>OTHER LINKS</p>
+                </div>
+                <div class="footer-links">
+                    <a href="">Terms of services</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Item listings</a>
+                    <a href="">List an item</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <div class="footer-top">
+                    <p>CATEGORIES</p>
+                </div>
+                <div class="footer-links">
+                    <a href="">Spaces</a>
+                    <a href="">Vehicles</a>
+                    <a href="">Furniture</a>
+                    <a href="">Business</a>
+                    <a href="">Equipments</a>
+                    <a href="">Tools</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright ©2021 All rights reserved</p>
+    </div>
+
+    <!-- end footer -->
+
+
+    <!-- JS file -->
+    <script src="js/index.js"></script>
+    <script src="js/tabs.js"></script>
+
+</body>
+
+</html>
