@@ -47,6 +47,7 @@
 
 .category-block {
   width: 23%;
+  min-width: 250px;
 }
 
 .category-image {
