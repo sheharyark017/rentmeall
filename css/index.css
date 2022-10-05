@@ -271,6 +271,33 @@
 
 /* end reviews */
 
+/* video */
+
+.video {
+  display: flex;
+  margin: 80px 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.video-text-top {
+  margin-bottom: 20px;
+}
+
+.video-text-top div {
+  width: 100px;
+}
+
+.video-text-top p {
+  font-size: 25px;
+}
+
+.video-text-para {
+  color: #383838;
+}
+
+/* end video */
+
 @media screen and (max-width: 980px) {
   .top-banner {
     margin: 125px 0 100px 0;
@@ -373,4 +400,37 @@
   }
 
   /* end reviews */
+
+  /* video */
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .video-text-top {
+    margin-bottom: 20px;
+  }
+
+  .video-text-top div {
+    width: 100px;
+  }
+
+  .video-text-top p {
+    font-size: 25px;
+  }
+
+  .video-text-para {
+    color: #383838;
+  }
+
+  .video-player iframe {
+    width: 100%;
+    aspect-ratio: 2;
+  }
+
+  /* end video */
 }
