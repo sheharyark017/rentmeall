@@ -1,3 +1,122 @@
+/* dropdown css */
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #fff;
+  height: 100%;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 23px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #4d4d4d transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #4d4d4d transparent;
+  top: 16px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #4d4d4d;
+  padding: 15px;
+  border-left: 1px solid rgb(225, 225, 225);
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* end dropdown css */
+
+/* product search */
+
+.products-search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.products-search .inputs {
+  width: 87%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 7px 0 rgb(196, 196, 196);
+  border-radius: 10px;
+}
+
+.products-search .search-input {
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.products-search .search-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 17px;
+  color: #282828;
+}
+
+.products-search .custom-select {
+  width: 19%;
+}
+
+.search-button {
+  width: 11%;
+}
+
+.search-button button {
+  width: 100%;
+  padding: 11px;
+  font-size: 17px;
+  background-color: #205bc7;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+}
+
+/* end product search */
+
 .category {
   margin: 100px 0;
 }
@@ -75,6 +194,37 @@
   .category-top p {
     font-size: 21px;
   }
+
+  /* product search */
+
+  .products-search {
+    flex-wrap: wrap;
+  }
+
+  .products-search .inputs {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .products-search .search-input {
+    width: 100%;
+  }
+
+  .products-search .custom-select {
+    width: 50%;
+  }
+
+  .search-button {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .search-button button {
+    width: 30%;
+  }
+
+  /* end product search */
 
   .category-block {
     width: 100%;
