@@ -72,33 +72,48 @@
         <!-- top banner -->
 
         <div class="top-banner">
-            <div class="top-text">
-                <p class="head">Rent <span class="text-animation"></span> <br> from people in
-                    your area</p>
-                <p class="para">Borrow almost anything from people nearby for jobs at home, fun experiences or work.</p>
+            <div class="banner-text">
+                <div class="top-text">
+                    <p class="head">Rent <span class="text-animation"></span> <br> from people in
+                        your area</p>
+                    <p class="para">Borrow almost anything from people nearby for jobs at home, fun experiences or work.
+                    </p>
+                </div>
+                <form action="" class="main-search-form">
+                    <div class="location">
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Location:</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">Lahore</option>
+                                <option value="3">Cavalry ground</option>
+                                <option value="4">Dharampura</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="drones, bikes, cameras..." required>
+                    </div>
+                    <div class="button">
+                        <button>Search</button>
+                    </div>
+                </form>
+                <p class="search-bottom"> <span>or</span> <a href="" class="add-item">List an Item +</a></p>
             </div>
-            <form action="" class="main-search-form">
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="input">
-                    <input type="text" placeholder="drones, bikes, cameras..." required>
-                </div>
-                <div class="button">
-                    <button>Search</button>
-                </div>
-            </form>
-            <p class="search-bottom"> <span>or</span> <a href="" class="add-item">List an Item +</a></p>
+            <div class="banner-image">
+                <img src="images/rent-me-all-slider-pic.png" alt="">
+            </div>
         </div>
 
         <!-- end top banner -->
+
         <!-- explore categories -->
 
         <div class="category">
-            <div class="top-head category-top">
+            <!-- <div class="top-head category-top">
                 <p>Explore our Categories</p>
                 <div></div>
-            </div>
+            </div> -->
 
             <div class="category-blocks">
                 <div class="category-block">
@@ -772,6 +787,8 @@
     <script src="js/typed.js"></script>
     <!-- accordion JS -->
     <script src="js/accordion.js"></script>
+    <!-- dropdown JS -->
+    <script src="js/dropdown.js"></script>
     <!-- JS file -->
     <script src="js/index.js"></script>
 </body>
