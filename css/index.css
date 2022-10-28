@@ -541,6 +541,26 @@
 
   .main-search-form {
     margin-top: 20px;
+    flex-wrap: wrap;
+    border-radius: 0;
+  }
+
+  .main-search-form .location {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .select-items div,
+  .select-selected {
+    border-right: none;
+  }
+
+  .main-search-form .input {
+    width: 65%;
+  }
+
+  .main-search-form .button {
+    width: 30%;
   }
 
   /* end top banner */
@@ -557,6 +577,10 @@
 
   .top-head div {
     width: 120px;
+  }
+
+  .category {
+    margin-top: 50px;
   }
 
   .category-block {
