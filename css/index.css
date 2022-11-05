@@ -1,7 +1,8 @@
 /* top banner */
 
 .top-banner {
-  height: calc(75vh - 75px);
+  /* height: calc(75vh - 75px); */
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -461,7 +462,7 @@
 /* footer banner */
 
 .footer-banner {
-  background-color: #5021c7;
+  background-color: #f79834;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -500,6 +501,7 @@
   border-radius: 8px;
   background-color: #db0c47;
   box-shadow: 0 0 5px 0 #b71644;
+  border: 1px solid #9a1037;
 }
 
 .footer-banner .footer-banner-buttons a:hover {

@@ -1,11 +1,11 @@
 footer {
-  background-color: #1071cc;
+  background-color: #205bc7;
   color: #fff;
 }
 
 .footer-top-line {
   height: 4px;
-  background-color: #0e5ea9;
+  background-color: #0d4c87;
 }
 
 .inner-footer {
@@ -49,6 +49,22 @@ footer {
   margin-left: 5px;
 }
 
+.footer-logos-col {
+  display: flex;
+  align-items: center;
+}
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logos .image {
+  width: 80px;
+  margin-right: 20px;
+}
+.footer-logos .image img {
+  width: 100%;
+}
+
 .footer-top {
   font-weight: 600;
   font-size: 20px;
@@ -57,7 +73,7 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  background-color: #0b66bb;
+  background-color: #0a549a;
   color: #fff;
   border-top: 1px solid rgb(89, 172, 249);
 }
